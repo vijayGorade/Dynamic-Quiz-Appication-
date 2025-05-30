@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+background-color: white;
+flex-direction: column;
+flex-wrap: wrap;
+padding: 10px;
+}
+
+.mainDiv{
+    display: flex;
+flex-direction: column;
+gap:25px;
+margin-top: 100px;
+color: white;
+align-items: center;
+    justify-content: center;
+    padding: 40px;
+    transform: scale(1);
+    transition: all .5s;
+}
+.mainDiv h1{
+    color: rgb(47, 45, 45);
+    font-size:29px;
+}
+.mainDiv h2{
+    color: rgba(0, 0, 0, 0.649);
+}
+.btnsLanguage{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+     align-items: center;
+    justify-content: center;
+}
+.btnsLanguage button{
+    height:47px;
+    width: 190px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(39, 39, 251);
+color: white;
+}
+.starBtn{
+     height:40px;
+    width: 200px;
+    cursor: pointer;
+    color: rgb(249, 244, 244);
+   background-color: rgb(3, 204, 13);
+   border-radius: 5px;
+   font-size: 20px;
+   border: none;
+}
+
+.quizDiv{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.threeOptionDiv{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.timeAndNameDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+}
+.threeOptionDiv div{
+padding: 10px;
+height: 50px,auto;
+width: 90%;
+display: flex;
+background-color: rgba(86, 86, 86, 0.137);
+align-items: center;
+justify-content: center;
+font-size: 16px;
+border-radius: 8px;
+cursor: pointer;
+color: rgb(35, 33, 33);
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.question{
+    color: rgb(54, 36, 36);
+    font-size: 23px;    
+    width: 100%;
+    
+}
+.saveAndNextBtn{
+    display:flex;
+    align-items: center;
+padding: 10px;
+width: 150px;
+border-radius: 5px;
+justify-content: center;
+font-size: 18px;
+background-color: blue;
+cursor: pointer;
+border: none;
+color: white    ;
+margin-top: 20px;
+}
+
+.numberPara{
+    color: white;
+}
+.timeAndNameDiv{
+    color: rgba(0, 0, 0, 0.971);
+}
+@keyframes timerColorChange {
+    from{
+color: transparent;
+    }
+    to{
+color: red;
+    }
+}
+.scoreShowDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    gap: 10px;
+   position: absolute;
+   top:60px;
+transform: scale(1);
+padding: 40px;
+width: 100%;
+background-color: rgba(215, 215, 215, 0.342);
+border-radius: 10px;
+height: 50%;
+transform: scale(0);
+ transition: all .5s;
+}
+.scoreShowDiv p{
+    color: rgb(60, 219, 60);
+    font-size: 23px;
+}
+.scoreShowDiv h1{
+    color: red;
+    font-size: 24px;
+}
+.scoreShowDiv h2{
+    color: brown;
+}
+.quizDiv{
+ position: absolute;
+ top:50px;
+ transform: scale(0);
+ background-color: rgba(233, 234, 231, 0.56);
+ padding: 25px;
+ border-radius: 5px;
+  transition: all .5s;
+}
+.numberPara{
+    color: black;
+}
+@media (max-width:356px) {
+  .threeOptionDiv div{
+    font-size: 14px;
+  }
+}
+@media (max-width:430px) {
+  .threeOptionDiv div{
+    font-size: 14px;
+  }
+  .question{
+    font-size: 20px;
+  }
+}
+.scoreShowDiv button{
+    height: 45px;
+    width: 200px;
+    font-size: 19px;
+    background-color: rgb(33, 190, 83);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin-top: 30px;
+}
+.progressBarDiv{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 15px;
+    border-radius: 100px;
+    background-color: rgba(217, 209, 209, 0.648);
+}
+.childProgresssDiv{
+    height: 15px;
+    width: 0px;
+    border-radius: 100px;
+    background-color: red;
+}
+.childProgresssDiv{
+    transition: all .5s;
+}
