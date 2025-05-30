@@ -698,7 +698,5 @@ e.style.backgroundColor="rgba(86, 86, 86, 0.203)";
 const gotoHomeBtn=document.querySelector(".home");
 
 gotoHomeBtn.addEventListener("click",()=>{
-  percentageWidth=0;
-  resultDiv.style.transform="scale(0)";
-  quizStartDiv.style.transform="scale(1)";
+window.location.reload();
 })
